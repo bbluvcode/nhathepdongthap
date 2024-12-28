@@ -1,0 +1,168 @@
+/* Info Header */
+.info-header {
+    background-color: #276eca;
+    color: #ffffff;
+    padding: 5px 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.info-header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.info-header a:hover {
+    text-decoration: underline;
+}
+.info-header .info-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+/* Main Navbar */
+.navbar {
+    background-color: #eaf1faf3;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    align-items: center;
+    width: 100%;
+}
+.navbar-brand a {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #121314;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 10px;
+    text-decoration: none;
+}
+.navbar-brand p {
+    margin-bottom: 0;
+}
+.navbar-nav .nav-item {
+    margin-right: 1rem;
+}
+.navbar-nav .nav-link {
+    color: #000000;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar-nav .nav-item::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #276eca;
+    width: 0;
+    transition: all 0.5s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #1d67c7;
+}
+.navbar-nav .nav-item:hover::after {
+    width: 100%;
+}
+.navbar-nav .nav-item.active .nav-link {
+    color: #043a82;
+}
+.navbar-nav .nav-item.active::after {
+    width: 100%;
+}
+
+.content {
+    height: 150vh;
+}
+/* Hero Section */
+#hero {
+    background: url("hero-bg-2.jpg") no-repeat center center;
+    background-size: cover;
+    height: 450px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+}
+#hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+#hero .btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 30px;
+}
+
+/*footer*/
+.list-unstyled li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Button Hotline */
+.hotline-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff8c42;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+}
+
+.hotline-button:hover {
+    background-color: #e67e00;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+.navbar-toggler{
+  background-color: #99c5fc;
+}
+/* Responsive: Ẩn trên màn hình nhỏ hơn 576px */
+@media (max-width: 576px) {
+    .navbar {
+        background-color: #0c7aff !important;
+    }
+    .navbar .company-name {
+        color: white !important;
+    }
+    .navbar-nav{
+      background-color: #ffffff;
+    }
+
+
+
+    .hotline-button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .hotline-icon {
+        font-size: 20px;
+    }
+    #header-top {
+        display: none !important;
+    }
+}
