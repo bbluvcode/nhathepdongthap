@@ -58,8 +58,10 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item {{ $nav_active == 'home' ? 'active' : '' }}"><a class="nav-link"
                             href="{{ route('client.home') }}">TRANG CHỦ</a></li>
+                    {{-- <li class="nav-item {{ $nav_active == 'gioithieu' ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('client.project') }}">GIỚI THIỆU</a></li> --}}
                     <li class="nav-item {{ $nav_active == 'gioithieu' ? 'active' : '' }}"><a class="nav-link"
-                            href="{{ route('client.project') }}">GIỚI THIỆU</a></li>
+                            href="{{ route('client.tvgs') }}">GIỚI THIỆU</a></li>
                     <li class="nav-item {{ $nav_active == 'thietke-thicong' ? 'active' : '' }}"><a class="nav-link"
                             href="{{ route('client.tvgs') }}">THIẾT KẾ - THI CÔNG</a>
                     </li>
@@ -93,9 +95,9 @@
                         <a><i class="fas fa-envelope"></i> {{ $companyInfo->address2 }}</a><br>
                         <a><i class="fas fa-phone-alt" style="transform: rotate(90deg);"></i>
                             +84{{ $companyInfo->phone }}</a><br>
-                        
-                        <a href="mailto:{{ $companyInfo->email }}"
-                            style="text-decoration: none; color:white"><i class="fas fa-envelope"></i> {{ $companyInfo->email }}</a>
+
+                        <a href="mailto:{{ $companyInfo->email }}" style="text-decoration: none; color:white"><i
+                                class="fas fa-envelope"></i> {{ $companyInfo->email }}</a>
                     @endif
 
                 </div>

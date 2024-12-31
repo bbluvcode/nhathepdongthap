@@ -115,7 +115,7 @@
                             <h5>Thông Tin Liên Hệ</h5>
                             @if ($contact)
                                 <p><i class="bi bi-geo-alt"></i> Địa chỉ: {{ $contact->address1 }}</p>
-                                <p><i class="bi bi-telephone"></i> Điện thoại: {{ $contact->phone }}</p>
+                                <p><i class="bi bi-telephone"></i> Điện thoại: +84{{ $contact->phone }}</p>
                                 <p><i class="bi bi-envelope"></i> Email: {{ $contact->email }}</p>
                             @endif
                         </div>
