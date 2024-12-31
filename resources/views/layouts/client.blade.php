@@ -91,8 +91,8 @@
                 <div class="col-md-6 mb-3">
                     <h5 class="text-uppercase text-warning">Liên hệ</h5>
                     @if ($companyInfo)
-                        <a><i class="bi bi-geo-alt-fill"></i> {{ $companyInfo->address1 }}</a> <br>
-                        <a><i class="fas fa-envelope"></i> {{ $companyInfo->address2 }}</a><br>
+                        {{-- <a><i class="bi bi-geo-alt-fill"></i> {{ $companyInfo->address1 }}</a> <br> --}}
+                        <a><i class="fas fa-map-marker"></i> {{ $companyInfo->address2 }}</a><br>
                         <a><i class="fas fa-phone-alt" style="transform: rotate(90deg);"></i>
                             +84{{ $companyInfo->phone }}</a><br>
 
