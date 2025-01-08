@@ -13,8 +13,8 @@
     <meta property="og:type" content="article">
 @endsection
 <style>
-    .MsoNormal img {
-        width: 100%;
+    p img {
+        width: 100% !important;
     }
 
     /* Nội dung bài viết */
@@ -149,7 +149,7 @@
                                 {{ $formattedDate }}</span>
                         </div>
                         <div class="article-body">
-                            <p style="width:100%; display:block">
+                            <p>
                                 {!! $newsDetail->description !!}
                                 Đến với Công ty TNHH Xây dựng Nhà Thép Đồng Tháp bạn sẽ được tư vấn miễn phí 24/7. Với đội
                                 ngũ kỹ thuật viên lắp đặt nhà xưởng khung sắt với nhiều năm kinh nghiệm lành nghề chuyên sâu
