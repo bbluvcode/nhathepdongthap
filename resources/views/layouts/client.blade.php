@@ -65,7 +65,7 @@
                     <li class="nav-item {{ $nav_active == 'gioithieu' ? 'active' : '' }}"><a class="nav-link"
                             href="{{ route('client.tvgs') }}">GIỚI THIỆU</a></li>
                     <li class="nav-item {{ $nav_active == 'thietke-thicong' ? 'active' : '' }}"><a class="nav-link"
-                            href="{{ route('client.tvgs') }}">THIẾT KẾ - THI CÔNG</a>
+                            href="{{ route('client.tktc') }}">THIẾT KẾ - THI CÔNG</a>
                     </li>
                     <li class="nav-item {{ $nav_active == 'lienhe' ? 'active' : '' }}"><a class="nav-link"
                             href="{{ route('client.contact') }}">LIÊN HỆ</a></li>
