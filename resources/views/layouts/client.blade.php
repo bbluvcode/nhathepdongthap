@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nhà thép Đồng Tháp</title>
+    <title>
+        @yield('title')
+    </title>
     <link rel="icon" href="/projectImages/logo_nhathep_icon.png" type="image/x-icon" />
     @yield('meta_tags')
     <!-- Bootstrap 5 CSS CDN -->

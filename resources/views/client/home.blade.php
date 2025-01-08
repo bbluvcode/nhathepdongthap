@@ -1,5 +1,38 @@
 @extends('layouts.client')
 @section('title', 'Home Page')
+{{-- @section('meta_tags')
+    <meta name="keywords" content="nhathepdongthap,nhathep,nhathepmiennam,nhatheptienche, nhaxuong, nhaxuongthep, nhaxuongsat, nhà xưởng">
+    <meta name="author" content="NTĐT">
+    <meta property="og:description" content="{{ $cleanDescription }}">
+    <!-- Thẻ Open Graph cho chia sẻ trên mạng xã hội -->
+    <meta property="og:title" content="{{ $newsDetail->title }}">
+    <meta property="og:description" content="{{ $cleanDescription }}">
+    <meta property="og:image" content="{{ $newsDetail->image }}">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="article">
+@endsection --}}
+@section('meta_tags')
+    <!-- Meta Description: Tối ưu SEO cho mô tả ngắn gọn về dịch vụ -->
+    <meta name="description"
+        content="Công ty Nhà thép Đồng Tháp xây dựng nhà xưởng uy tín giá cả phải chăng, tiến độ, và an toàn cho các công trình xây dựng dân dụng và công nghiệp. Liên hệ ngay để nhận báo giá chi tiết.">
+    <!-- Meta Keywords: Từ khóa liên quan đến ngành -->
+    <meta name="keywords"
+        content="nhathepdongthap,nhathep,nhathepmiennam,nhatheptienche, nhaxuong, nhaxuongthep, nhaxuongsat, xây dựng nhà xưởng, nhà xưởng tiền chế, nhà xưởng kèo thép, nhà xưởng thép, giá xây nhà xưởng, gia xay nha xuong, gia xay nha thep, giá xây nhà thép">
+    <!-- Thẻ Open Graph cho chia sẻ trên mạng xã hội (Facebook, Zalo, LinkedIn) -->
+    <meta property="og:title" content="Nhà thép Đồng Tháp">
+    <meta property="og:description"
+        content="Công ty Nhà thép Đồng Tháp xây dựng nhà xưởng uy tín giá cả phải chăng, tiến độ, và an toàn cho các công trình xây dựng dân dụng và công nghiệp. Liên hệ ngay để nhận báo giá chi tiết.">
+    {{-- <meta property="og:image" content="{{ $introCompany->image }}"> --}}
+    <meta property="og:image" content="projectImages/anhseo.jpg">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="website">
+    <!-- Meta Author: Thông tin tác giả hoặc công ty -->
+    <meta name="author" content="Nhà thép Đồng Tháp">
+    <!-- Open Graph Image Format for better rendering -->
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+@endsection
 <style>
     /* carausels */
     .carousel-flick {
@@ -401,13 +434,13 @@
     .bbcarousel>* {
         padding: 0 !important;
     }
-    .bbalign-item{
+
+    .bbalign-item {
         width: 60%;
         margin: auto;
     }
 </style>
 @section('content')
-
     <div class="container-fluid">
         <div class="row bbcarousel">
             @if ($carausels && $carausels->count() > 0)
@@ -600,4 +633,23 @@
             pageDots: false // Hiển thị điểm chỉ báo
         });
     </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org", // Định nghĩa ngữ cảnh cho dữ liệu có cấu trúc
+          "@type": "Article", // Loại dữ liệu là một bài viết
+          "headline": "Thi công nhà thép tiền chế", // Tiêu đề bài viết
+          "image": "https://nhathepdongthap.com/projectImages/anhseo.jpg", // URL của hình ảnh chính liên quan đến bài viết
+          "author": "Công ty Nhà thép Đồng Tháp", // Tên tác giả bài viết (ở đây là tên công ty)
+          "publisher": { // Thông tin về nhà xuất bản
+            "@type": "Organization", // Loại dữ liệu là một tổ chức
+            "name": "Nhà thép Đồng Tháp", // Tên tổ chức
+            "logo": { // Thông tin về logo của tổ chức
+              "@type": "ImageObject", // Loại dữ liệu là một đối tượng hình ảnh
+              "url": "https://nhathepdongthap.com/projectImages/anhseo.jpg" // URL của logo
+            }
+          },
+          "datePublished": "2023-01-08", // Ngày xuất bản bài viết
+          "description": "Nhà thép tiền chế Nhà thép Đồng Tháp là công ty chuyên thiết kế và thi công nhà thép tiền chế uy tín tại Đồng Tháp." // Mô tả ngắn gọn về bài viết
+        }
+        </script>
 @endsection

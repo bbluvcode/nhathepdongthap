@@ -17,7 +17,10 @@ class TVGSController extends Controller
     public function tvgs()
     {    
         $introtvgs = IntroTvgs::first();
-        $newsTVSG = News::where('type', 'TVGS')->get();
+
+        // $newsTVSG = News::where('type', 'TVGS')->orderByDesc("timestamps")->get();
+        $newsTVSG = News::where('type', 'TVGS')->orderByDesc("created_at")->get();
+
         $newsStandountTVSG = News::where('type', 'TVGSAT')->get();
         $specialAds = SpecialAds::first();
         $quote = Quote::where('type', 'TVGS')->first();

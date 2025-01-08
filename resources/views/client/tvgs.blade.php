@@ -1,5 +1,18 @@
 @extends('layouts.client')
-@section('title', 'Home Page')
+@section('title', 'Thi công - Thiết kế')
+@section('meta_tags')
+    <meta name="keywords"
+        content="nhathepdongthap,nhathep,nhathepmiennam,nhatheptienche, nhaxuong, nhaxuongthep, nhaxuongsat, xây dựng nhà xưởng, nhà xưởng tiền chế, nhà xưởng kèo thép, nhà xưởng thép, giá xây nhà xưởng, gia xay nha xuong, gia xay nha thep, giá xây nhà thép">
+    
+    <meta name="author" content="NTĐT">
+    <meta property="og:description" content="{{ $introtvgs->title }}">
+    <!-- Thẻ Open Graph cho chia sẻ trên mạng xã hội -->
+    <meta property="og:title" content="{{ $introtvgs->description}}">
+    <meta property="og:description" content="{{ $introtvgs->description }}">
+    {{-- <meta property="og:image" content="{{ $newsDetail->image }}"> --}}
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="article">
+@endsection
 <style>
     .title-card {
         height: 80px;
@@ -685,7 +698,7 @@
                     @foreach ($newsTVSG as $item)
                         <div class="col-md-4 mb-4">
                             <div class="card article-card h-100">
-                                <img src="{{ $item->image }}" class="card-img-tvgs" alt="Mẹo Giám Sát Hiệu Quả">
+                                <img src="{{ $item->image }}" class="card-img-tvgs" alt="{{ $item->title }}">
                                 <div class="card-body">
                                     <h5 class="card-title text-title">{{ $item->title }}</h5>
                                     <p class="card-text text-description">{{ cleanText($item->description) }}</p>

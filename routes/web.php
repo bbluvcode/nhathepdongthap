@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, "home"])->name("client.home");
 Route::get('/du-an', [ProjectController::class, "project"])->name("client.project");
-Route::get('/tu-van-giam-sat', [TVGSController::class, "tvgs"])->name("client.tvgs");
+Route::get('/thiet-ke-thi-cong', [TVGSController::class, "tvgs"])->name("client.tvgs");
 Route::get('/lien-he', [ContactController::class, "contact"])->name("client.contact");
 //store
 Route::get('/bao-gia-tu-van-giam-sat', [PriceController::class, "price"])->name("client.price");

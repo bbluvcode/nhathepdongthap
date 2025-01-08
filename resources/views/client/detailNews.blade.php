@@ -1,14 +1,14 @@
 @extends('layouts.client')
 @section('title', 'Thi công - Thiết kế')
 @section('meta_tags')
-    <meta name="keywords" content="giamsatxaydung,tuvanxaydung,tintucxaydung,xaynha">
-    <meta name="author" content="Trương Minh Hải">
+    <meta name="keywords"
+        content="nhathepdongthap,nhathep,nhathepmiennam,nhatheptienche, nhaxuong, nhaxuongthep, nhaxuongsat, xây dựng nhà xưởng, nhà xưởng tiền chế, nhà xưởng kèo thép, nhà xưởng thép, giá xây nhà xưởng, gia xay nha xuong, gia xay nha thep, giá xây nhà thép">
+    <meta name="author" content="NTĐT">
     <meta property="og:description" content="{{ $cleanDescription }}">
     <!-- Thẻ Open Graph cho chia sẻ trên mạng xã hội -->
     <meta property="og:title" content={{ $newsDetail->title }}>
-    <meta property="og:description" content="{{ $cleanDescription }}>
-    <meta property="og:image"
-        content="https://thumbs.dreamstime.com/z/working-online-work-office-businessman-employee-cartoon-vector-illustration-154769768.jpg">
+    <meta property="og:description" content="{{ $cleanDescription }}">
+    <meta property="og:image" content="">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:type" content="article">
 @endsection
@@ -145,14 +145,17 @@
                                 {{ $formattedDate }}</span>
                         </div>
                         <div class="article-body">
-                            <p class="width:100%">
+                            <p style="width:100%;">
                                 {!! $newsDetail->description !!}
                                 Đến với Công ty TNHH Xây dựng Nhà Thép Đồng Tháp bạn sẽ được tư vấn miễn phí 24/7. Với đội
                                 ngũ kỹ thuật viên lắp đặt nhà xưởng khung sắt với nhiều năm kinh nghiệm lành nghề chuyên sâu
-                                sẽ tư vấn nhiệt tình cho quý khách lựa chọn công xuất. Cũng như tính toán hợp lý kích thước
+                                sẽ tư vấn nhiệt tình cho quý khách lựa chọn công trình. Cũng như tính toán hợp lý kích thước
                                 để bạn tiết kiệm chi phí nhất khi bạn lắp đặt nhà xưởng khung sắt. Công ty luôn đặt khách
                                 hàng lên trên hết và tự tin có thể đáp ứng các yêu cầu kỹ thuật, thẩm mỹ, chất lượng cũng
                                 như các yêu cầu về tiến độ, dịch vụ bảo hành.
+                                Công ty TNHH Xây dựng Nhà Thép Đồng Tháp chuyên thi công xây dựng nhà xưởng, nhà xưởng tiền
+                                chế, nhà xưởng kèo thép, nhà xưởng thép, nhà tiền chế, nhà kèo thép, xây nhà khung thép, kết
+                                cấu thép.
 
                             <p>
                                 Gọi ngay đến hotline: <a href="tel:0908999987">0908999987</a> / <a
