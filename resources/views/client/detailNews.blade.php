@@ -13,6 +13,10 @@
     <meta property="og:type" content="article">
 @endsection
 <style>
+    .MsoNormal img {
+        width: 100%;
+    }
+
     /* Nội dung bài viết */
     .article-content {
         background-color: #fff;
