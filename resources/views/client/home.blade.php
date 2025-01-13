@@ -23,15 +23,15 @@
     <meta property="og:description"
         content="Công ty Nhà thép Đồng Tháp xây dựng nhà xưởng uy tín giá cả phải chăng, tiến độ, và an toàn cho các công trình xây dựng dân dụng và công nghiệp. Liên hệ ngay để nhận báo giá chi tiết.">
     {{-- <meta property="og:image" content="{{ $introCompany->image }}"> --}}
-    <meta property="og:image" content="projectImages/anhseo.jpg">
+    <meta property="og:image" content="https://nhathepdongthap.com/projectImages/anhseo.jpg">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="article">
     <!-- Meta Author: Thông tin tác giả hoặc công ty -->
-    <meta name="author" content="Nhà thép Đồng Tháp">
+    <meta name="author" content="Nhà thép">
     <!-- Open Graph Image Format for better rendering -->
     <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+    <meta property="og:image:width" content="700">
+    <meta property="og:image:height" content="500">
 @endsection
 <style>
     /* carausels */

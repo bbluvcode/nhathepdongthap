@@ -12,6 +12,16 @@
     {{-- <meta property="og:image" content="{{ $newsDetail->image }}"> --}}
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:type" content="article">
+    {{-- <meta property="og:image" content="{{ $introCompany->image }}"> --}}
+    <meta property="og:image" content="https://nhathepdongthap.com/projectImages/anhseo.jpg">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="article">
+    <!-- Meta Author: Thông tin tác giả hoặc công ty -->
+    <meta name="author" content="Nhà thép">
+    <!-- Open Graph Image Format for better rendering -->
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="700">
+    <meta property="og:image:height" content="500">
 @endsection
 <style>
     .title-card {
