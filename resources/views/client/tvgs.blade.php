@@ -1,5 +1,5 @@
 @extends('layouts.client')
-@section('title', 'Thi công - Thiết kế')
+@section('title', $introtvgs->title)
 @section('meta_tags')
     <meta name="keywords"
         content="nhathepdongthap,nhathep,nhathepmiennam,nhatheptienche, nhaxuong, nhaxuongthep, nhaxuongsat, xây dựng nhà xưởng, nhà xưởng tiền chế, nhà xưởng kèo thép, nhà xưởng thép, giá xây nhà xưởng, gia xay nha xuong, gia xay nha thep, giá xây nhà thép">

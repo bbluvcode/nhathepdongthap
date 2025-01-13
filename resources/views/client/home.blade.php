@@ -1,5 +1,5 @@
 @extends('layouts.client')
-@section('title', 'Home Page')
+@section('title', 'Xây dựng Nhà thép')
 {{-- @section('meta_tags')
     <meta name="keywords" content="nhathepdongthap,nhathep,nhathepmiennam,nhatheptienche, nhaxuong, nhaxuongthep, nhaxuongsat, nhà xưởng">
     <meta name="author" content="NTĐT">
